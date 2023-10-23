@@ -1,0 +1,102 @@
+{
+  "name": "poc",
+  "description": "Next Generation Boilerplate for React/Typescript, built on top of Vite ⚡️",
+  "private": false,
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src/main.tsx",
+  "author": "EruptionJS🌋",
+  "homepage": "https://github.com/eruptionjs/core#readme",
+  "repository": "github:eruptionjs/core.git",
+  "bugs": "https://github.com/eruptionjs/core/issues",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "host": "vite --host",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --watch --coverage",
+    "test:ui": "vitest --watch --coverage --ui",
+    "lint": "npx eslint src",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:css": "npx stylelint **/*.css --aei --color",
+    "prettier": "npx prettier src --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "format": "npm run prettier:fix && npm run lint:fix",
+    "format:check": "npm run prettier && npm run lint",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "commit": "commit"
+  },
+  "engines": {
+    "node": "^20.x.x",
+    "npm": "^10.x.x"
+  },
+  "dependencies": {
+    "react": "^18.x",
+    "react-dom": "^18.x"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.x",
+    "@commitlint/config-conventional": "^18.x",
+    "@commitlint/prompt-cli": "^18.x",
+    "@fvilers/disable-react-devtools": "^1.x",
+    "@testing-library/jest-dom": "^6.x",
+    "@testing-library/react": "^14.x",
+    "@testing-library/user-event": "^14.x",
+    "@trivago/prettier-plugin-sort-imports": "^4.x",
+    "@types/node": "^20.8.7",
+    "@types/react": "^18.x",
+    "@types/react-dom": "^18.x",
+    "@typescript-eslint/eslint-plugin": "^6.x",
+    "@typescript-eslint/parser": "^6.x",
+    "@vitejs/plugin-react-swc": "^3.x",
+    "@vitest/coverage-v8": "^0.x",
+    "@vitest/ui": "^0.x",
+    "c8": "^8.x",
+    "eslint": "^8.x",
+    "eslint-config-prettier": "^9.x",
+    "eslint-plugin-import": "^2.x",
+    "eslint-plugin-jsx-a11y": "^6.x",
+    "eslint-plugin-prettier": "^5.x",
+    "eslint-plugin-react": "^7.x",
+    "eslint-plugin-react-hooks": "^4.x",
+    "happy-dom": "^12.x",
+    "husky": "^8.x",
+    "lint-staged": "^15.x",
+    "msw": "^1.x",
+    "prettier": "^3.x",
+    "stylelint": "^15.x",
+    "stylelint-config-standard": "^34.x",
+    "typescript": "^5.x",
+    "vite": "^4.x",
+    "vitest": "^0.x",
+    "web-vitals": "^3.x"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [
+    "react",
+    "boilerplate",
+    "vite",
+    "bundle",
+    "typescript",
+    "starter",
+    "template"
+  ]
+}
