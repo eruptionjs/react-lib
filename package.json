@@ -1,17 +1,20 @@
 {
   "name": "@devmozao/poc",
-  "description": "Next Generation Boilerplate for React/Typescript, built on top of Vite ⚡️",
+  "description": "poc for lib components",
   "author": "@devMozao",
   "private": false,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "license": "MIT",
-  "homepage": "https://github.com/eruptionjs/core#readme",
-  "bugs": "https://github.com/eruptionjs/core/issues",
+  "homepage": "https://github.com/devmozao/poc",
+  "bugs": "https://github.com/devmozao/poc",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/devmozao/poc.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "dist"
@@ -19,9 +22,6 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "dev": "vite",
     "start": "vite",
