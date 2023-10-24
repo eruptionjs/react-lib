@@ -28,8 +28,8 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'lib/main.ts'),
       formats: ['es'],
-      name: 'teste',
-      fileName: 'teste',
+      name: 'react-lib',
+      fileName: 'react-lib',
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
@@ -42,13 +42,8 @@ export default defineConfig({
           ]),
       ),
       output: {
-        // assetFileNames: 'assets/[name][extname]',
-        assetFileNames: 'components/[name][extname]',
+        assetFileNames: 'components/[name]/[name][extname]',
         entryFileNames: '[name].js',
-        // globals: {
-        //   react: 'React',
-        //   'react-dom': 'ReactDOM',
-        // },
       },
     },
   },
