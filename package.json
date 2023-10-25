@@ -1,12 +1,12 @@
 {
-  "name": "@devmozao/poc",
-  "description": "poc for lib components",
-  "author": "@devMozao",
+  "name": "react-lib",
+  "description": "🌋 lib/components boilerplate for projects made with React/Typescript, on top of Vite ⚡",
+  "author": "Eruption🌋",
   "private": false,
   "version": "0.0.1",
   "license": "MIT",
-  "homepage": "https://github.com/devmozao/poc",
-  "bugs": "https://github.com/devmozao/poc",
+  "homepage": "https://github.com/eruption/react-lib",
+  "bugs": "https://github.com/eruption/react-lib",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "repository": {
